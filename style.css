@@ -1,74 +1,48 @@
 body {
   font-family: 'Electrolize', sans-serif;
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  height: 100vh;
   background-color: #947BD3;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
   text-align: center;
   padding-top: 50px;
 }
-button, #hoverBox, h1{
+
+h1, button, #hoverBox {
   font-family: 'Underdog', cursive;
-  font-family: Arial, sans-serif;
-  text-align: center;
-  margin-top: 50px;
-  background-color: #947BD3;
 }
 
 button {
   padding: 10px 20px;
   font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
   margin: 10px;
-   border-radius: 8px;
-   color: #EFFFC8;
-   background-color: #AC9969;
+  cursor: pointer;
+  border-radius: 8px;
+  color: #524948;
+  background-color: #FFFFF2;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #582B11;
-  justify-content: center;
-  align-items: center;
- 
-}
-
-button:hover {
-  background-color: #9F2042;
+  background-color: #7F675B;
   color: white;
-  justify-content: center;
-  align-items: center;
-  
 }
 
 #hoverBox {
   margin-top: 20px;
   padding: 40px;
-  background-color: #6D3D14;
-  transform: rotate(45deg); /* Rotate to form a rhombus */
+  background-color: #AAA694;
+  transform: rotate(45deg);
   width: 120px;
   height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: black;
-  border-radius: 0; /* Remove rounding for rhombus */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
   border: 11px solid #582B11;
-  padding: 20px;
-  background-color: lightgrey;
-  display: inline-block;
   transition: transform 0.3s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-background-color: #F8E5EE;
 }
 
 #hoverBox:hover {
@@ -83,13 +57,12 @@ background-color: #F8E5EE;
   margin: 10px;
   width: 150px;
   height: 150px;
-  transition: transform 0.3s ease, opacity 0.5s ease;
   opacity: 0.5;
+  transition: transform 0.3s ease, opacity 0.5s ease;
 }
 
 .gallery-image.current {
   opacity: 1;
-  transition: transform 0.3s ease;
 }
 
 .gallery-image:hover {
@@ -118,6 +91,7 @@ input:focus {
   margin-bottom: 10px;
   display: block;
 }
+
 #surpriseMessage {
   position: fixed;
   top: 30%;
@@ -135,14 +109,6 @@ input:focus {
 }
 
 @keyframes popUp {
-  0% {
-    transform: translate(-50%, -50%) scale(0);
-    opacity: 0;
-  }
-  100% {
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 1;
-  }
-input[type="password"]:focus, input[type="text"]:focus {
-  border-color: #4CAF50;
+  0% { transform: translate(-50%, -50%) scale(0); opacity: 0; }
+  100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
 }
