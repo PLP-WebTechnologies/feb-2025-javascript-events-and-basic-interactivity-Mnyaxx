@@ -1,5 +1,4 @@
 body {
-<<<<<<< HEAD
   font-family: 'Electrolize', sans-serif;
   font-family: Arial, sans-serif;
   margin: 0;
@@ -15,12 +14,10 @@ body {
 }
 button, #hoverBox, h1{
   font-family: 'Underdog', cursive;
-=======
   font-family: Arial, sans-serif;
   text-align: center;
   margin-top: 50px;
   background-color: #947BD3;
->>>>>>> 689e891fe3c316952026a3ea36e1824b51a7c72a
 }
 
 button {
@@ -28,7 +25,6 @@ button {
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-<<<<<<< HEAD
   margin: 10px;
    border-radius: 8px;
    color: #EFFFC8;
@@ -37,7 +33,6 @@ button {
 
 button:hover {
   background-color: #582B11;
-=======
   justify-content: center;
   align-items: center;
  
@@ -48,13 +43,11 @@ button:hover {
   color: white;
   justify-content: center;
   align-items: center;
->>>>>>> 689e891fe3c316952026a3ea36e1824b51a7c72a
   
 }
 
 #hoverBox {
   margin-top: 20px;
-<<<<<<< HEAD
   padding: 40px;
   background-color: #6D3D14;
   transform: rotate(45deg); /* Rotate to form a rhombus */
@@ -68,7 +61,6 @@ button:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
   border: 11px solid #582B11;
-=======
   padding: 20px;
   background-color: lightgrey;
   display: inline-block;
@@ -77,7 +69,6 @@ button:hover {
   justify-content: center;
   align-items: center;
 background-color: #F8E5EE;
->>>>>>> 689e891fe3c316952026a3ea36e1824b51a7c72a
 }
 
 #hoverBox:hover {
@@ -92,19 +83,16 @@ background-color: #F8E5EE;
   margin: 10px;
   width: 150px;
   height: 150px;
-<<<<<<< HEAD
   transition: transform 0.3s ease, opacity 0.5s ease;
   opacity: 0.5;
 }
 
 .gallery-image.current {
   opacity: 1;
-=======
   transition: transform 0.3s ease;
 }
 
 .gallery-image:hover {
->>>>>>> 689e891fe3c316952026a3ea36e1824b51a7c72a
   transform: scale(1.1);
 }
 
@@ -119,7 +107,6 @@ input {
   width: 250px;
 }
 
-<<<<<<< HEAD
 input:focus {
   border: 2px solid #4CAF50;
   outline: none;
@@ -156,8 +143,6 @@ input:focus {
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
   }
-=======
 input[type="password"]:focus, input[type="text"]:focus {
   border-color: #4CAF50;
->>>>>>> 689e891fe3c316952026a3ea36e1824b51a7c72a
 }
