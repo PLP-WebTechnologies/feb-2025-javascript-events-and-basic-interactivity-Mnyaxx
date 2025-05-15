@@ -1,0 +1,120 @@
+body {
+  font-family: 'Electrolize', sans-serif;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #947BD3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  padding-top: 50px;
+}
+button, #hoverBox, h1{
+  font-family: 'Underdog', cursive;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+   border-radius: 8px;
+   color: #EFFFC8;
+   background-color: #AC9969;
+}
+
+button:hover {
+  background-color: #582B11;
+  
+}
+
+#hoverBox {
+  margin-top: 20px;
+  padding: 40px;
+  background-color: #6D3D14;
+  transform: rotate(45deg); /* Rotate to form a rhombus */
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  border-radius: 0; /* Remove rounding for rhombus */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  border: 11px solid #582B11;
+}
+
+#hoverBox:hover {
+  transform: scale(1.1);
+}
+
+#gallery {
+  margin-top: 20px;
+}
+
+.gallery-image {
+  margin: 10px;
+  width: 150px;
+  height: 150px;
+  transition: transform 0.3s ease, opacity 0.5s ease;
+  opacity: 0.5;
+}
+
+.gallery-image.current {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+form {
+  margin-top: 30px;
+}
+
+input {
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+  width: 250px;
+}
+
+input:focus {
+  border: 2px solid #4CAF50;
+  outline: none;
+}
+
+.feedback {
+  font-size: 12px;
+  color: red;
+  margin-bottom: 10px;
+  display: block;
+}
+#surpriseMessage {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #582B11;
+  color: #EFFFC8;
+  padding: 20px 40px;
+  border-radius: 20px;
+  font-size: 24px;
+  font-family: 'Underdog', cursive;
+  display: none;
+  z-index: 999;
+  animation: popUp 1s ease-in-out;
+}
+
+@keyframes popUp {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
